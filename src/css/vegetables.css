@@ -6,7 +6,6 @@
   min-width: 80px;
   height: 80px;
   border: none;
-  background-color: #fc8a11;
   border-radius: 50%;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -21,5 +20,21 @@
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
-  /* transform: rotate(-14deg); */
+  transform: rotate(-14deg);
+  padding: 26px 8px;
+}
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .vegetables-button {
+    min-width: 114px;
+    min-height: 114px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+  }
+}
+@media screen and (min-width: 1280px) {
 }
