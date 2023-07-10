@@ -1,3 +1,25 @@
-.vegetables{
-    background-color: green;
+.vegetables {
+  background-color: green;
+}
+.vegetables-button {
+  display: block;
+  min-width: 80px;
+  height: 80px;
+  border: none;
+  background-color: #fc8a11;
+  border-radius: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #fc8a11;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  /* transform: rotate(-14deg); */
 }
