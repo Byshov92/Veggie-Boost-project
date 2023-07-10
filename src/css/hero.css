@@ -1,3 +1,74 @@
 .hero {
-    background-color: orange;
+  background-color: orange;
+}
+.hero-shop-button {
+  min-width: 68px;
+  height: 68px;
+  border: none;
+  border-radius: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.56px;
+  cursor: pointer;
+  color: #fc8a11;
+  background-color: #faf3e7;
+  margin-left: 20px;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  transform: rotate(-14deg);
+
+  text-transform: uppercase;
+}
+.hero-shop-btn-span {
+  max-width: 55px;
+  max-height: 32px;
+  flex-direction: column;
+  display: flex;
+}
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .hero-shop-button {
+    min-width: 114px;
+    min-height: 114px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.96px;
+    text-align: center;
+    margin-left: 32px;
+    margin-right: auto;
+  }
+  .hero-shop-btn-span {
+    max-width: 84px;
+    max-height: 48px;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-shop-button {
+    min-width: 132px;
+    min-height: 132px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.12px;
+    text-align: center;
+    margin-left: 32px;
+    margin-right: auto;
+  }
+  .hero-shop-btn-span {
+    max-width: 84px;
+    max-height: 56px;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+  }
 }
