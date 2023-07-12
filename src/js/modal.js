@@ -4,6 +4,7 @@
     openModalBtns: document.querySelectorAll('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
+    body: document.body,
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -18,6 +19,7 @@
     const mediaQuery = window.matchMedia('(max-width: 767px)').matches;
 
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('scroll-hidden');
 
     if (!refs.modal.classList.contains('is-hidden') && mediaQuery) {
       closeMenu();
