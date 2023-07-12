@@ -1,19 +1,16 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const toggleMenuBtn = document.querySelector('.js-toggle-menu');
-  const input = document.getElementById('check');
   const body = document.body;
 
   const toggleMenu = () => {
     const isMenuOpen =
       toggleMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+
     toggleMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     toggleMenuBtn.classList.toggle('is-open');
-
-    !isMenuOpen
-      ? (body.style.overflow = 'hidden')
-      : (body.style.overflow = 'auto');
+    body.classList.toggle('scroll-hidden');
   };
 
   toggleMenuBtn.addEventListener('click', toggleMenu);
@@ -24,6 +21,6 @@
     mobileMenu.classList.remove('is-open');
     toggleMenuBtn.classList.remove('is-open');
     toggleMenuBtn.setAttribute('aria-expanded', false);
-    body.style.overflow = 'auto';
+    body.classList.remove('scroll-hidden');
   });
 })();
