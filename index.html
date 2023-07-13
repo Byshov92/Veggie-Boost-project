@@ -6,8 +6,8 @@
     <title>Veggie Boost</title>
     <link rel="icon" href="/Veggie-Boost_DigitalNinjas-project/assets/favicon-85a021d0.ico" />
     
-    <script type="module" crossorigin src="/Veggie-Boost_DigitalNinjas-project/assets/index-cee12d36.js"></script>
-    <link rel="stylesheet" href="/Veggie-Boost_DigitalNinjas-project/assets/index-52f09036.css">
+    <script type="module" crossorigin src="/Veggie-Boost_DigitalNinjas-project/assets/index-8817d047.js"></script>
+    <link rel="stylesheet" href="/Veggie-Boost_DigitalNinjas-project/assets/index-fc63ca6c.css">
   </head>
   <body>
     <header class="header">
@@ -415,9 +415,13 @@
             required
             placeholder="+38()"
             class="wewill-input"
+            pattern="[0-9]{12}"
+            title="380501112233"
+            maxlength="12"
+            minlength="12"
           />
         </label>
-        <button type="button" class="wewill-btn">Recall</button>
+        <button type="submit" class="wewill-btn">Recall</button>
       </form>
     </div>
     <div class="wewill-images">
@@ -602,7 +606,7 @@
           name="user-name"
           minlength="4"
           maxlength="20"
-          pattern="[a-zA-Z]+"
+          pattern="[a-zA-Z ]+"
           required
           placeholder="Enter full name..."
       /></label>
