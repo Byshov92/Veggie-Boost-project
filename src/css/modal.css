@@ -18,12 +18,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  /* z-index: 200; */
   width: 100vw;
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.4);
   transition: visibility var(--tran-250), opacity var(--tran-250);
 }
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -50,6 +51,7 @@
     0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03),
     0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04),
     0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+  z-index: 999;
 }
 
 .modal-title {
@@ -116,6 +118,7 @@
 .modal-item-img {
   align-self: flex-end;
 }
+
 .modal-check-label {
   position: absolute;
   top: 14px;
@@ -133,6 +136,7 @@
   border-radius: 4px;
   border: 1.5px solid var(--green-color);
 }
+
 .modal-check-icon {
   fill: none;
 }
@@ -293,6 +297,7 @@
   .modal-form {
     width: 360px;
   }
+
   .modal-form-label {
     padding: 14px 24px;
   }
@@ -323,6 +328,7 @@
         max-height: 100%;
     } */
 }
+
 /* фон для ретіни */
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .modal {
@@ -342,6 +348,7 @@
     background-position: right 0px bottom 0px;
     background-attachment: local;
   }
+
   .modal-list {
     gap: 20px;
   }
@@ -351,13 +358,16 @@
     padding: 40px 7px 14px;
     width: calc((100% - 40px) / 3);
   }
+
   .modal-item-text {
     font-size: 24px;
     line-height: 1.16;
   }
+
   .modal-item-img {
     width: 100%;
   }
+
   /* .modal-background {
         bottom: -40px;
         left: 399px;
@@ -365,6 +375,7 @@
         
     } */
 }
+
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .modal {
     background-image: url(../img/modal-pic-2x.png);
